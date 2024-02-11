@@ -1,0 +1,205 @@
+@media (max-width: 767px){@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/') format('woff2'), /* Reemplaza con la ruta correcta */
+         url('assets/fonts/young-serif/') format('woff2'); /* Asegúrate de tener ambos formatos para mayor compatibilidad */
+    
+    font-style: normal;
+    }
+    @font-face {
+        font-family: 'Young Serif';
+        src: url('assets/fonts/young-serif/young-serif.woff2') format('woff2'),
+            url('assets/fonts/young-serif/young-serif.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        
+    }
+    body {
+        font-family: 'Outfit';
+        background-color: hsl(0, 0%, 100%);
+        color:hsl(24, 5%, 18%);
+        font-size: 16px; 
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .container{
+        margin-left:35px;
+        margin-right:35px;
+        
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border: none;
+    }
+    h1{
+        font-family:'Young Serif' ;
+        
+    }
+    h2{
+        color: hsl(332, 51%, 32%);;
+    }
+    h3{
+        color:  hsl(14, 45%, 36%);
+        width: 100%;
+        height: 50px; 
+        border-top:  1px solid black;
+        padding-top: 20px;
+        font-family:'Young serif';
+        font-size: 25px;
+    }
+    p{
+        font-family: 'Outfit';
+    }
+    .pre{   
+        background-color: hsl(330, 100%, 98%);
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 30px;
+    }
+    .fondo{
+        background-color:  hsl(0, 0%, 100%);
+        width: 750px;
+        margin: 100px auto;
+        padding: 40px;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    li::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-decoration: none; 
+        margin-right: 3px;
+        color: hsl(24, 5%, 18%)
+    }
+    .tabla td{
+        border-bottom: 1px solid black; 
+        padding: 15px;   
+    }
+    li{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    img{
+        border-radius: 10px;
+    }
+    .especial{
+        color:  hsl(332, 51%, 32%);
+    }
+    #letra{
+        color: hsl(24, 5%, 18%);
+        font-weight: normal;
+    }
+    ol{
+        
+        color:hsl(14, 45%, 36%);
+        font-weight: bold;
+    }
+    ul{
+        
+        color: hsl(14, 45%, 36%);   
+    }
+    .dos{
+        color: hsl(14, 45%, 36%); 
+        font-weight: bold;  
+    }
+    section{
+        margin: 20s0px;
+    }}
+
+@media only screen and (min-width: 185.44px) {
+    @font-face {
+        font-family: 'Outfit';
+        src: url('assets/fonts/outfit/') format('woff2'), /* Reemplaza con la ruta correcta */
+             url('assets/fonts/young-serif/') format('woff2'); /* Asegúrate de tener ambos formatos para mayor compatibilidad */
+        font-weight: 400px;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Young Serif';
+        src: url('assets/fonts/young-serif/young-serif.woff2') format('woff2'),
+             url('assets/fonts/young-serif/young-serif.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    body {
+        font-family: 'Outfit';
+        background-color: hsl(31, 96%, 47%);
+        width: 100%;
+        max-width: 375px;
+        margin: 0 auto;
+    
+    }
+  
+    
+    h1{
+        font-family:'Young serif';
+    }
+    h2{
+        padding-left: 40px;
+        color: hsl(332, 51%, 32%);
+    }
+    h3{
+        color:  hsl(14, 45%, 36%);
+        width: 100%;
+        height: 50px; 
+        border-top:  1px solid black;
+        padding-top: 20px;
+        font-family:'Young serif';
+        font-size: 25px;
+    }
+    p{
+        font-family: 'Outfit';
+    }
+    .pre{   
+        background-color: hsl(330, 100%, 98%);
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .fondo{
+        background-color:  hsl(0, 0%, 100%);
+        width: 750px;
+        margin: 100px auto;
+        padding: 40px;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    li::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-decoration: none; 
+        margin-right: 5px;
+        color: hsl(24, 5%, 18%)
+    }
+    .tabla td{
+        border-bottom: 1px solid black; 
+        padding: 15px;   
+    }
+    li{
+        margin: 10px;
+    }
+    img{
+        border-radius: 10px;
+    }
+    .especial{
+        color:  hsl(332, 51%, 32%);
+    }
+    #letra{
+        color: hsl(24, 5%, 18%);
+        font-weight: normal;
+    }
+    ol{
+        
+        color:hsl(14, 45%, 36%);
+        font-weight: bold;
+    }
+    ul{
+        
+        color: hsl(14, 45%, 36%);   
+    }
+    .dos{
+        color: hsl(14, 45%, 36%); 
+        font-weight: bold;  
+    }
+  }
