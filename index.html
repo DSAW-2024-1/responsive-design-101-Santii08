@@ -3,12 +3,14 @@
 <head >
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <script src="js/scrollreveal.js"></script>
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="codeEstiles.css">
-  <title>Frontend Mentor | Recipe page</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" />
+  <script src="js/scrollreveal.js"></script> <!--Importo la libreria de Scrollreveal para animaciones-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> <!--codigo predeterminado-->
+  <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 480px)" href="CSS/codeEstiles.css">   <!-- Estilos css para mobil -->
+  <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1023px)" href="CSS/cssTablet.css"> <!-- Estilos css para tablet -->
+  <link rel="stylesheet" media="screen and (min-width: 1024px)" href="CSS/cssDesktop.css"> <!-- Estilos css para desktop -->
+  <title>Frontend Mentor | Recipe page</title><!--codigo predeterminado-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&display=swap" /><!--Importo las fuentes de letra-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" /><!--Importo las fuenres de letra-->
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -18,38 +20,38 @@
 </head>
 </head>
 <body>
-  <div class="general">
+  <div class="general"><!--La utilzo en desktop para poner el fondo principal-->
     <header>
-      <img src="./assets/images/image-omelette.jpeg" alt="Imagen Omelette" width="670" height="340">
+      <img src="./assets/images/image-omelette.jpeg" alt="Imagen Omelette" width="670" height="340" class="tablet scroll-letter"><!--Imagen Omelette-->
       
     </header>
-  <div class="container">
-    <h1>Simple Omelette Recipe</h1>
-      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
-    <section class="pre scroll-letter">
+  <div class="container"><!--La uso como contenedor de todos los sections-->
+    <h1 class=" scroll-letter">Simple Omelette Recipe</h1><!--El scroll-letter es esencial para las animaciones en JS-->
+      <p class=" scroll-letter">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    <section class="pre scroll-letter"><!--Pre es debido a una seccion especifica, preparation-->
       <!--Preparation time Total:--> 
       <h2> Preparation time</h2>
-      <ul class="especial">
-        <li data-label="Total:"><span id="letra">Approximately 10 minutes</span> </li>
+      <ul class="especial"><!--Class espcial debido a que esta lista es distinta a las demas-->
+        <li data-label="Total:"><span id="letra">Approximately 10 minutes</span> </li><!--Data label me ayuda con la negrilla al comienzo de cada texto, ademas creo un sapan con id para la letra-->
         <li data-label="Preparation:"><span id="letra">5 minutes</span></li>
         <li data-label="Cooking:"><span id="letra">5 minutes</span></li>
       </ul>
     </section> 
-    <section class="scroll-letterW" >
+    <section class="scroll-letter" >
       <h3>Ingredients </h3>
-      <ul>
-        <li><span id="letra">2-3 large eggs</span></li>
+      <ul><!--Al ser de etiqueta <ul> es especial para solo puntos como viñetas-->
+        <li><span id="letra">2-3 large eggs</span></li><!--El span me ayuda porque aunque la lista sea de un color por los puntos, la letra sera de un color distinto-->
         <li><span id="letra">Salt, to taste</span></li>
         <li><span id="letra">Pepper, to taste</span></li>
         <li><span id="letra">1 tablespoon of butter or oil</span></li>
-        <li><span id="letraa">Optional fillings: cheese, diced vegetables, cooked meats, herbs</span></li>
+        <li><span id="letra">Optional fillings: cheese, diced vegetables, cooked meats, herbs</span></li>
       </ul>
     </section>
-    <section>
+    <section class="scroll-letter">
       <h3 >Instructions</h3>
-      <ol class="prueba">
+      <ol><!--Al ser de etiqueta <ol> es especial para solo numeros como viñetas-->
         <li data-label="Beat the eggs:"> <span id="letra">In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-          You can add a tablespoon of water or milk for a fluffier texture.</span></li>
+          You can add a tablespoon of water or milk for a fluffier texture.</span></li><!--Mas de lo mismo, Data label me ayuda con poner en negrilla los titulos, y span me ayuda a poner la letra de un color disitnto al de la lista-->
         <li data-label="Heat the pan:"> <span id="letra">Place a non-stick frying pan over medium heat and add butter or oil.</span></li>
         <li data-label="Cook the omelette:"><span id="letra">  Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
           the eggs evenly coat the surface.</span></li>
@@ -60,12 +62,12 @@
         <li data-label="Enjoy:"><span id="letra"> Serve hot, with additional salt and pepper if needed.</span></li>
       </ol>
     </section>
-    <section>
+    <section class="scroll-letter"><!--Clase llamada en el archivo JS para la animacion-->
       <h3 >Nutrition</h3>
       <p> The table below shows nutritional values per serving without the additional fillings.</p>
-      <table class="tabla" style="width:100%">
-        <tr>
-          <td>Calories</td>
+      <table class="tabla" style="width:100%">  <!--Clase tabla necesaria para la elaboraciond e las lineas en CSS-->
+        <tr><!--Cada tr es una fila en la tabla-->
+          <td>Calories</td><!--Cada td es una columna en la tabla-->
           <td class="dos">277kcal</td>
         </tr   >
         <tr>
@@ -83,11 +85,11 @@
       </table>
   </div>     
   </section>
-    <footer class="attribution">
+    <footer class="attribution"><!--Pie de pagina-->
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </footer>
-    <script src="js/Idex.js"></script>
+    <script src="js/Idex.js"></script><!--Importamos el archivo de JS-->
   </div>
 </body>
 

@@ -1,0 +1,104 @@
+
+    @font-face {
+        font-family: 'Outfit';
+        src: url('assets/fonts/outfit/') format('woff2'), /*Importo las fuentes de letras*/
+             url('assets/fonts/young-serif/') format('woff2'); /*Importo las fuentes de letras*/
+        
+        font-style: normal;
+        }
+        @font-face {
+            font-family: 'Young Serif';
+            src: url('assets/fonts/young-serif/young-serif.woff2') format('woff2'),/*Importo las fuentes de letras*/
+                url('assets/fonts/young-serif/young-serif.woff') format('woff');/*Importo las fuentes de letras*/
+            font-weight: normal;
+            font-style: normal;
+            
+        }
+        body {/*fondo principal*/
+            font-family: 'Outfit';/*letra por determiando para el texto*/
+            background-color: hsl(0, 0%, 100%);
+            color:hsl(24, 5%, 18%);
+            font-size: 16px; 
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        
+
+        .container{/* contiene todos los sections*/
+            margin-left:25px;
+            margin-right:25px;
+            
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            height: auto;
+            border: none;
+            border-radius: 10px;
+        }
+        h1{
+            font-family:'Young Serif' ;/* primer titulo(Simple Omelette Recipe)*/
+            
+        }
+        h2{/*segundo titulo(Preparation time)*/
+            color: hsl(332, 51%, 32%);;
+        }
+        h3{/*demas titulos(Ingredients, Intructions, Nutrition)*/
+            color:  hsl(14, 45%, 36%);
+            width: 100%;
+            height: 50px; 
+            border-top:  1px solid black;
+            padding-top: 20px;
+            font-family:'Young serif';
+            font-size: 25px;
+        }
+        p{
+            font-family: 'Outfit';
+        }
+        .pre{      /*box preparation time*/
+            background-color: hsl(330, 100%, 98%);
+            padding: 10px;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+        li::before {/*Textos subrayados en listas*/
+            content: attr(data-label);
+            font-weight: bold;
+            text-decoration: none; 
+            margin-right: 3px;
+            color: hsl(24, 5%, 18%)
+        }
+        .tabla td{ /*Columnas de tablas*/
+            border-bottom: 1px solid black; 
+            padding: 15px;   
+        }
+        li{/*intelineado*/
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .especial{/*lista de preparation*/
+            color:  hsl(332, 51%, 32%);
+        }
+        #letra{/*letras de listas que no aplican con el color de la lista*/
+            color: hsl(24, 5%, 18%);
+            font-weight: normal;
+        }
+        ol{/*color de la lista*/
+            
+            color:hsl(14, 45%, 36%);
+            font-weight: bold;
+        }
+        ul{/*color de la lista*/
+            
+            color: hsl(14, 45%, 36%);   
+        }
+        .dos{/*segunda columna de la tabla, va de un color distinto a la primera columna*/
+            color: hsl(14, 45%, 36%); 
+            font-weight: bold;  
+        }
+         
